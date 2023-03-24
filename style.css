@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&family=Montserrat:ital@1&display=swap');
+
+*{
+    background-image: url(movie-theater.jpg);
+    background-size: cover;
+    position: relative;
+    box-sizing: border-box;
+    color: #f1f1f1;
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+.container{
+    position: absolute;
+    background: rgba(15, 25, 36, 0.8);
+    overflow: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+}
+
+input,select,option{
+    background: aliceblue;
+    color: black;
+}
+
+h2{
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+h2 span{
+    color: red;
+}
+
+.block label,.block input, .block select,h2,p{
+    display: block;
+    width: 100%;
+    padding: 10px;
+}
+
+#inline{
+    display: inline-block;
+    background: rgba(15, 25, 36, 0.8);
+    color: #f1f1f1;
+}
+
+#inline + input,
+button{
+    display: block;
+}
+
+form,form button, form label, form h2, form p,span{
+    background: rgba(15, 25, 36, 0.8);
+}
+
+h2,p{
+    margin: 0px;
+}
+
+#inline + input
+{
+    width: -webkit-fill-available;
+    height: 50px;
+    padding: 10px;
+}
+
+#inline, .block, .comment{
+    margin: 5px;
+}
+
+#inline label, #inline input{
+    margin: 5px;
+}
+
+p{
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}
+
+#sendButton{
+    margin: auto;
+    border-radius: 5px;
+    background-color: red;
+    width: 100px;
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+#sendButton:hover{
+    background-color: #f1f1f1;
+    color: red;
+}

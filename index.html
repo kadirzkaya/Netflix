@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section >
+        <form class="container">
+            <div class="block">
+                <h2>Net<span>Flix</span></h2>
+                <p>Thank you for signing up at Netflix. Tell us more about yourself.</p>
+                <label for="name">Name</label>
+                <input type="text" name="name" placeholder="Enter Your Name" required>
+                <label for="age">Age</label>
+                <input type="number" name="age" min="0" placeholder="Enter Your Age" required>
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="Enter Your Email" required>
+                <label for="content">Content Type</label>
+
+                <select name="content">
+                    <option value="content">Movie</option>
+                    <option value="content">Series</option>
+                </select>
+            </div>
+            <div id="inline">
+                <label for="movieType">Movie Type</label><br>
+                <input type="checkbox" id="movieType1">
+                <label for="movieType1" class="lbl">Comedy</label><br> 
+                <input type="checkbox" id="movieType2">
+                <label for="movieType2" class="lbl">Action</label> <br>
+                <input type="checkbox" id="movieType3">
+                <label for="movieType3" class="lbl">Romance</label> <br>
+                
+                <label>Gender</label>
+                <br>
+                <input type="radio" name="gender" id="gender1">
+                <label for="gender1" class="lbl">Male</label>
+                <br>
+                <input type="radio" name="gender" id="gender2">
+                <label for="gender2" class="lbl">Famale</label>
+                <br>
+                <input type="radio" name="gender" id="gender3">
+                <label for="gender3" class="lbl">Other</label>
+                
+            </div>
+            <input type="text" placeholder="Any comment..." class="comment">
+            <button id="sendButton">Send</button>
+        </form>
+
+    </section>
+    
+</body>
+</html>
